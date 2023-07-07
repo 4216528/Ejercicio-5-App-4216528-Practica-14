@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Ejercicio5.MainPage">
+
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="rectangulo.png" 
+                   
+             HeightRequest="100"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese la altura y base del rectangulo"/>
+
+            <!-- Creamos 2 Entry para ingresar la altura y base del rectangulo  -->
+
+            <Entry Margin="10,10,10,10" Placeholder="Altura" x:Name="AlturaEntry" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Base" x:Name="BaseEntry" />
+
+            <!-- Agregamos dos label uno para mostrar el resultado y el otro para un texto personalizado -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="El perimetro del rectangulo es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="ResultadoPerimetro"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="La superficie del rectangulo es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="ResultadoSuperficie"/>
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Calcular" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
